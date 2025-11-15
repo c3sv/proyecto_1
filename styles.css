@@ -1,0 +1,243 @@
+.topheader {
+  /*para que el menu acompañe*/
+  position: fixed;
+  background-color: #61da65;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+}
+.topheader h1 {
+  color: white;
+  padding: 10px;
+}
+/*el . solo se utiliza para las clases para body y lo demas no*/
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+/*el camino para entrar al texto es primero la lista y luego el anchor*/
+.Menu-Horizontal li a {
+  text-decoration: none;
+  font-size: large;
+  color: white;
+}
+/*display es para mostrar la lista*/
+.Menu-Vertical {
+  position: absolute;
+  list-style: none;
+  display: none;
+  width: 200px;
+  background-color: rgb(1, 169, 127);
+  padding: 0;
+}
+.Menu-Horizontal li a:hover {
+  color: rgb(108, 200, 177);
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.Logo {
+  padding: 20px;
+}
+
+/* Seccion creditos*/
+.Seccion-creditos {
+  padding: 120px 30px;
+  background-color: white;
+}
+.Cont-general-Creditos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  gap: 40;
+}
+
+.Cont-creditos-texto {
+  flex: 1;
+}
+.Cont-creditos-texto h2 {
+  color: blue;
+  line-height: 1.6;
+}
+.Cont-creditos-imagen {
+  color: blue;
+  margin-bottom: 15px;
+}
+.Cont-creditos-texto p {
+  color: black;
+  line-height: 1.5;
+}
+.Cont-creditos-imagen img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+/* Seccion Seguros*/
+.seccion-seguros {
+  padding: 50px 30px;
+  background-color: white;
+}
+.cont-gral-seguros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.cont-seguros-texto {
+  flex: 1;
+}
+.cont-seguros-texto button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(52, 145, 238);
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.cont-seguros-texto h2 {
+  color: blue;
+  line-height: 1.6;
+}
+.cont-seguros-texto p {
+  color: black;
+  line-height: 1.5;
+}
+.cont-seguros-video {
+  flex: 1;
+}
+.cont-seguros-video iframe {
+  width: 100%;
+  max-width: 500px;
+  padding-bottom: 60px;
+}
+.seccion-formulario {
+  background-color: beige;
+  padding: 40px;
+  border: 3px solid #007acc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.cont-gral-formulario {
+  padding: 30px;
+
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+.campo {
+  background-color: #a7d4f3;
+  padding: 15px;
+  border: 1.5px solid red;
+  border-radius: 5px;
+  width: 450px;
+  margin-bottom: 15px;
+}
+.formulario label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: purple;
+}
+.formulario input[text="text"],
+.formulario select {
+  padding: 8px;
+  border: 1.5px solid bisque;
+  border-radius: 5px;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 8px;
+  border: 1px solid green;
+  background-color: #63f0c1;
+  border-radius: 5px;
+}
+.formulario button {
+  background-color: chocolate;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+/*Pie de pagina footer*/
+.seccion-footer {
+  background-color: darkblue;
+  color: rgb(86, 79, 212);
+  padding: 40px 20px;
+}
+
+.content-gral-footer {
+  display: flex;
+  color: rgb(86, 79, 212);
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  bottom: 0;
+  left: 0;
+}
+.footer-info {
+  flex: 1;
+  min-width: 250px;
+}
+.footer-info h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+.footer-redes {
+  flex: 1;
+  color: white;
+  min-width: 250px;
+}
+.footer-redes h3 {
+  margin-bottom: 15px;
+}
+.lista-redes {
+  list-style: none;
+  padding: 0;
+}
+.lista-redes li {
+  margin-bottom: 8px;
+}
+.lista-redes li a {
+  color: rgb(86, 79, 212);
+  text-decoration: none;
+}
+.footer-politicas {
+  flex: 1;
+  color: white;
+  min-width: 250px;
+}
+.lista-proteccion li {
+  margin-bottom: 8px;
+}
+.lista-proteccion li a {
+  color: rgb(86, 79, 212);
+  text-decoration: none;
+}
